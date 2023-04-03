@@ -96,11 +96,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
                   ),
                   InkWell(
-                    onTap: () {
-                      if (value.branches.length > 0 && value.branches != null) {
-                        buildPopupDialog(context, size);
-                      }
-                    },
+                    onTap: value.isReportLoading
+                        ? null
+                        : () {
+                            if (value.branches.length > 0 &&
+                                value.branches != null) {
+                              buildPopupDialog(context, size);
+                            }
+                          },
                     child: value.branches.length == 0 || value.branches == null
                         ? Container()
                         : Row(

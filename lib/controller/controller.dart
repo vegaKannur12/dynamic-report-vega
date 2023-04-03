@@ -497,8 +497,8 @@ class Controller extends ChangeNotifier {
     String reverseId = id.split('').reversed.join('');
     String sCon = reverseId + sdte + title;
     try {
-      generatedColor = Color((Random().nextDouble() * 0xFFFFFF).toInt() << 0)
-          .withOpacity(1.0);
+      generatedColor = Color((Random().nextDouble() * 0xFF4d47c).toInt() << 0)
+          .withOpacity(1);
       // _string = StringToHex.toHexString(sCon);
       // generatedColor = Color(StringToHex.toColor(_string));
       // generatedColorInt = StringToHex.toColor(_string);

@@ -199,10 +199,10 @@ class _GraphDataTableState extends State<GraphDataTable> {
           }
           datacell.add(
             DataCell(
-              onTap: () {
+              // onTap: () {
                 
-                info.showInfoSheet(context, text);
-              },
+              //   info.showInfoSheet(context, text);
+              // },
               Container(
                 constraints:
                     BoxConstraints(minWidth: colwidth, maxWidth: colwidth),

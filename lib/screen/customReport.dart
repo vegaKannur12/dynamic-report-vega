@@ -75,7 +75,8 @@ class _CustomReportState extends State<CustomReport> {
                                         value.tabId.toString(),
                                         value.fromDate.toString(),
                                         value.todate.toString(),
-                                        br,"");
+                                        br,
+                                        "");
                                 Provider.of<Controller>(context, listen: false)
                                     .setMenuClick(false);
 
@@ -120,7 +121,8 @@ class _CustomReportState extends State<CustomReport> {
                                       value.tabId.toString(),
                                       value.fromDate.toString(),
                                       value.todate.toString(),
-                                      br,"");
+                                      br,
+                                      "");
                               Provider.of<Controller>(context, listen: false)
                                   .setMenuClick(false);
                             },
@@ -279,19 +281,19 @@ class _CustomReportState extends State<CustomReport> {
                                       bottom: 0), // ***
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
-                                      sum > 100
-                                          ? BoxShadow(
-                                              color: Colors.green,
-                                              blurRadius: 20,
-                                              spreadRadius: 1,
-                                              offset: Offset(0, -15),
-                                            )
-                                          : BoxShadow(
-                                              // color: Colors.white,
+                                    // boxShadow: [
+                                    //   sum > 100
+                                    //       ? BoxShadow(
+                                    //           color: Colors.green,
+                                    //           blurRadius: 20,
+                                    //           spreadRadius: 1,
+                                    //           offset: Offset(0, -15),
+                                    //         )
+                                    //       : BoxShadow(
+                                    //           // color: Colors.white,
 
-                                              )
-                                    ],
+                                    //           )
+                                    // ],
                                   ),
                                   child: GraphDataTable(decodd: jsonEncoded)),
                               Row(
