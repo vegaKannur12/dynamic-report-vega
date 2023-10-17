@@ -29,6 +29,8 @@ class _TabbarClickPageState extends State<TabbarClickPage> {
   bool showGraph = false;
   String? _string;
   Color? generatedColor;
+  String? todaydate;
+  DateTime now = DateTime.now();
   int? generatedColorInt;
   final GlobalKey<State> _keyLoader = new GlobalKey<State>();
 //////////////////////////////////////////////////////////////
@@ -82,6 +84,8 @@ class _TabbarClickPageState extends State<TabbarClickPage> {
     // TODO: implement initState
     super.initState();
     String br;
+    todaydate = DateFormat('dd-MM-yyyy').format(now);
+
     if (widget.b_id == null) {
       br = "0";
     } else {
@@ -91,7 +95,7 @@ class _TabbarClickPageState extends State<TabbarClickPage> {
       Provider.of<Controller>(context, listen: false)
           .setMenuindex(widget.tabId.toString());
       Provider.of<Controller>(context, listen: false)
-          .loadReportData(context, widget.tabId, "", "", br,"");
+          .loadReportData(context, widget.tabId, todaydate, todaydate, br, "");
     });
 
     // Provider.of<Controller>(context, listen: false).getData();

@@ -12,6 +12,7 @@ import 'package:reportingapp1/screen/companyRegistration.dart';
 import 'package:reportingapp1/screen/homeScreen.dart';
 import 'package:reportingapp1/screen/splashScreen.dart';
 import 'package:reportingapp1/textToColor.dart';
+
 // company key ---ZFP8SGB8LRLR
 void requestPermission() async {
   var status = await Permission.storage.status;
